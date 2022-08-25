@@ -6,11 +6,15 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "./dotenv.sh && semantic-release",
+    "release:preview": "./dotenv.sh && semantic-release --dry-run"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.4.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@types/react": "^18.0.17",
     "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
@@ -18,6 +22,7 @@
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^19.0.5",
     "styled-components": "^5.3.5",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
