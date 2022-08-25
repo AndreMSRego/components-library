@@ -1,5 +1,5 @@
 {
-  "name": "library",
+  "name": "@pi-react/library",
   "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -30,5 +30,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "styled-components": "^5.3.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
